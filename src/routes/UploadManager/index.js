@@ -6,6 +6,9 @@ import {
 import { Menu } from "antd";
 import React, { useState } from "react";
 import styles from "./index.module.css";
+import ServerManagement from "../../components/ServerManagement";
+import ProjectManagement from "../../components/ProjectManagement";
+import ServerDeployment from "../../components/ServerDeployment";
 function getItem(label, key, icon, children, type) {
   return {
     key,
@@ -44,8 +47,15 @@ const UploadManager = () => {
         defaultSelectedKeys={["1"]}
         defaultOpenKeys={["uploadManager"]}
       />
-
-      <div className={styles.content}>{currentKey === "1" ? 1 : 0}</div>
+      <div className={styles.content}>
+        {currentKey === "1" ? (
+          <ServerManagement />
+        ) : currentKey === "2" ? (
+          <ProjectManagement />
+        ) : (
+          <ServerDeployment />
+        )}
+      </div>
     </div>
   );
 };

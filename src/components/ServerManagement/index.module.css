@@ -1,0 +1,21 @@
+.wrapper :global .ant-table-thead > tr > th {
+  background: white;
+}
+.wrapper :global .ant-table-thead > tr > th {
+  font-weight: 600;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  display: flex;
+  gap: 20px;
+}
+.left .searchItem {
+  display: flex;
+  align-items: center;
+}
+.left .searchItem .text {
+  word-break: keep-all;
+}
