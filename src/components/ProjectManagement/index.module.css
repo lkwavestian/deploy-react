@@ -1,0 +1,42 @@
+.wrapper {
+  display: flex;
+}
+.wrapper :global .ant-table-thead > tr > th {
+  background: white;
+}
+.wrapper :global .ant-table-thead > tr > th {
+  font-weight: 600;
+}
+.left {
+  background-color: #fafafa;
+  width: 150px;
+}
+.left .listItem {
+  padding: 8px 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+.right {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.right .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 24px;
+}
+.right .header .headerLeft {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.right .header .headerLeft .searchItem {
+  display: flex;
+  align-items: center;
+}
+.right .header .headerLeft .searchItem .text {
+  word-break: keep-all;
+}

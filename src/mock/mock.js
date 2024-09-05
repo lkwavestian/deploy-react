@@ -37,3 +37,46 @@ Mock.mock("/getServerManagementList", [
     createTime: "2024-08-15 14:40:34",
   },
 ]);
+
+Mock.mock("/getProjectManagementList", [
+  {
+    name: "任务管理系统",
+    code: "PROJECT_MANAGE",
+    type: 1,
+    ip: "143.4.2.8.109",
+    version: "V20240815_002",
+    time: "2024-08-10 14:40:34",
+  },
+  {
+    name: "任务管理系统",
+    code: "PROJECT_MANAGE",
+    type: 2,
+    ip: "143.4.2.8.109",
+    version: "V20240815_002",
+    time: "2024-08-10 14:40:34",
+  },
+  {
+    name: "终本续管",
+    code: "ZBXG",
+    type: 1,
+    ip: "143.4.2.8.109",
+    version: "V20240815_012",
+    time: "2024-08-10 14:40:34",
+  },
+  {
+    name: "终本续管",
+    code: "ZBXG",
+    type: 2,
+    ip: "143.4.2.8.109",
+    version: "V20240815_002",
+    time: "2024-08-14 14:40:00",
+  },
+  {
+    name: "文本预览服务",
+    code: "FILE_VIEW",
+    type: 2,
+    ip: "143.4.2.8.109",
+    version: "V20240815_001",
+    time: "2024-08-14 14:40:34",
+  },
+]);

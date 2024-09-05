@@ -1,0 +1,59 @@
+.wrapper {
+  display: flex;
+  :global {
+    .ant-table-thead > tr > th {
+      background: white;
+    }
+    .ant-table-thead > tr > th {
+      // color: #000000d9;
+      font-weight: 600;
+    }
+  }
+}
+
+.left {
+  background-color: rgb(250, 250, 250);
+  width: 150px;
+  .listItem {
+    padding: 8px 16px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.right {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 24px;
+    .headerLeft {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      .searchItem {
+        display: flex;
+        align-items: center;
+        .text {
+          word-break: keep-all;
+        }
+      }
+    }
+  }
+}
+
+// .left {
+//   display: flex;
+//   gap: 20px;
+//   .searchItem {
+//     display: flex;
+//     align-items: center;
+//     .text {
+//       word-break: keep-all;
+//     }
+//   }
+// }
