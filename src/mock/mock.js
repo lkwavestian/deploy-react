@@ -132,3 +132,97 @@ Mock.mock("/getServerDeploymentList", [
     currentStatus: 1,
   },
 ]);
+
+Mock.mock("/getTreeTable", [
+  {
+    key: 1,
+    name: "本地服务器",
+    ip: "1.27.20.7",
+    children: [
+      {
+        key: 11,
+        name: "本地服务器A",
+        ip: "1.27.20.7",
+        code: "ZBXG",
+        type: 1,
+      },
+      {
+        key: 12,
+        name: "本地服务器B",
+        ip: "1.27.20.7",
+        code: "PROJECT_MANAGE",
+        type: 1,
+      },
+    ],
+  },
+  {
+    key: 2,
+    name: "143.4.208.108",
+    ip: "143.4.208.108",
+    children: [
+      {
+        key: 21,
+        name: "任务管理系统",
+        code: "FILE_VIEW",
+        ip: "143.4.208.108",
+        type: 2,
+      },
+      {
+        key: 22,
+        name: "终端服务器",
+        code: "ZBXG",
+        ip: "143.4.208.108",
+        type: 1,
+      },
+    ],
+  },
+  {
+    key: 3,
+    name: "143.4.208.111",
+    ip: "143.4.208.111",
+    children: [
+      {
+        key: 31,
+        name: "执行辅助",
+        code: "PROJECT_MANAGE",
+        ip: "143.4.208.111",
+        type: 1,
+      },
+      {
+        key: 32,
+        name: "文本预览服务",
+        code: "FILE_VIEW",
+        ip: "143.4.208.111",
+        type: 2,
+      },
+    ],
+  },
+  {
+    key: 4,
+    name: "143.4.208.13",
+    ip: "143.4.208.13",
+    children: [
+      {
+        key: 41,
+        name: "中转",
+        code: "PROJECT_MANAGE",
+        ip: "143.4.208.13",
+        type: 1,
+      },
+      {
+        key: 42,
+        name: "备份",
+        code: "ZBXG",
+        ip: "143.4.208.13",
+        type: 2,
+      },
+      {
+        key: 43,
+        name: "Nginx代理",
+        code: "PROJECT_MANAGE",
+        ip: "143.4.208.13",
+        type: 2,
+      },
+    ],
+  },
+]);

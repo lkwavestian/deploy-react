@@ -107,11 +107,14 @@ const ProjectDeployment = () => {
     setActiveKey(key);
   };
   const add = () => {
+    if (items.map((item) => item.key).includes("projectManager")) {
+      return;
+    }
     const newActiveKey = `projectManager`;
     setItems([
       ...items,
       {
-        label: "New Tab",
+        label: "项目管理",
         children: <TreeTable />,
         key: newActiveKey,
       },
