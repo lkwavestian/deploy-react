@@ -24,7 +24,7 @@ const items = [
     getItem("服务器管理", "1"),
     getItem("项目管理", "2"),
     getItem("部署管理-服务器", "3"),
-    getItem("部署管理-项目", "4"),
+    // getItem("部署管理-项目", "4"),
   ]),
 ];
 

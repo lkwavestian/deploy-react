@@ -1,0 +1,102 @@
+.wrapper {
+  display: flex;
+}
+.wrapper :global .ant-table-thead > tr > th {
+  background: white;
+}
+.wrapper :global .ant-table-thead > tr > th {
+  font-weight: 600;
+}
+.left {
+  background-color: #fafafa;
+  width: 150px;
+}
+.left .listItem {
+  padding: 8px 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+.left .listItem .overflowHidden {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.right {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.right .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 24px;
+}
+.right .header .headerLeft {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.right .header .headerLeft .searchItem {
+  display: flex;
+  align-items: center;
+}
+.right .header .headerLeft .searchItem .text {
+  word-break: keep-all;
+}
+.listWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  padding-top: 0;
+}
+.listWrapper .listItem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #d9d9d9;
+  padding: 10px 15px;
+}
+.listWrapper .listItem .listHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.listWrapper .listItem .listHeader .leftPart {
+  display: flex;
+  gap: 10px;
+}
+.listMain {
+  display: flex;
+  gap: 10px;
+}
+.listMain .listMainItem {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.listMain .listMainItem .spanItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+}
+.listMain .listMainItem .spanItem > span:first-child {
+  font-size: 12px;
+}
+.listMain .middle {
+  flex-grow: 1;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  justify-content: space-around;
+}

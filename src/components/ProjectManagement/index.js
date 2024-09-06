@@ -11,6 +11,7 @@ import {
   Select,
   Badge,
   Radio,
+  Tooltip,
 } from "antd";
 import { ExclamationCircleOutlined } from "@ant-design/icons";
 import TextArea from "antd/lib/input/TextArea";
@@ -217,7 +218,9 @@ function ProjectManagement() {
             }}
           >
             <span>{item.topText}</span>
-            <span>{item.bottomText}</span>
+            <Tooltip title={item.bottomText}>
+              <span className={styles.overflowHidden}>{item.bottomText}</span>
+            </Tooltip>{" "}
           </div>
         ))}
       </Fragment>
