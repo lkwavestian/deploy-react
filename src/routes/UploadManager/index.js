@@ -9,6 +9,7 @@ import styles from "./index.module.css";
 import ServerManagement from "../../components/ServerManagement";
 import ProjectManagement from "../../components/ProjectManagement";
 import ServerDeployment from "../../components/ServerDeployment";
+import ProjectDeployment from "../../components/ProjectDeployment";
 function getItem(label, key, icon, children, type) {
   return {
     key,
@@ -24,7 +25,7 @@ const items = [
     getItem("服务器管理", "1"),
     getItem("项目管理", "2"),
     getItem("部署管理-服务器", "3"),
-    // getItem("部署管理-项目", "4"),
+    getItem("测试", "4"),
   ]),
 ];
 
@@ -52,8 +53,10 @@ const UploadManager = () => {
           <ServerManagement />
         ) : currentKey === "2" ? (
           <ProjectManagement />
-        ) : (
+        ) : currentKey === "3" ? (
           <ServerDeployment />
+        ) : (
+          <ProjectDeployment />
         )}
       </div>
     </div>

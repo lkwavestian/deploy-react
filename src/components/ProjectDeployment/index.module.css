@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  gap: 20px;
+}
+.left .topMenu {
+  display: flex;
+  gap: 10px;
+}
+.right {
+  flex-grow: 1;
+}
